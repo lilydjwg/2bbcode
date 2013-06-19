@@ -1,0 +1,5 @@
+#!/bin/bash
+
+format=${1:-markdown_github}
+
+exec pandoc -f $format -t ~/bin/bbcode.lua
