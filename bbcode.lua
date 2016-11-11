@@ -62,6 +62,7 @@ function Link(s, src, tit)
     s = src
   end
   ret = ret .. "]" .. s .. "[/url]"
+  return ret
 end
 
 function Image(s, src, tit)
@@ -106,7 +107,7 @@ function HorizontalRule()
 end
 
 function CodeBlock(s, attr)
-    return "[code]\n" .. s .. '\n[/code]'
+  return "[code]\n" .. s .. '\n[/code]'
 end
 
 function BulletList(items)
