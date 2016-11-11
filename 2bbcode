@@ -1,5 +1,6 @@
 #!/bin/bash
 
 format=${1:-markdown_github}
+me=$(dirname $0)
 
-exec pandoc -f $format -t ~/bin/bbcode.lua
+exec pandoc -f $format -t "$me"/bbcode.lua
