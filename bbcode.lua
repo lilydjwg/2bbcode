@@ -43,7 +43,7 @@ function Subscript(s)
 end
 
 function Superscript(s)
-  error("Superscript isn't supported")
+  return s
 end
 
 function SmallCaps(s)
@@ -157,6 +157,18 @@ end
 -- strings, rows is an array of arrays of strings.
 function Table(caption, aligns, widths, headers, rows)
   error("Table isn't supported")
+end
+
+function RawBlock(format, str)
+  return '[code]\n' .. str .. '\n[/code]\n'
+end
+
+function Span(s, attr)
+  return s
+end
+
+function Div(s, attr)
+  return s .. '\n'
 end
 
 -- The following code will produce runtime warnings when you haven't defined
