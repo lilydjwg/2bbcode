@@ -1,0 +1,1 @@
+pandoc -t bbcode.lua -o "%~pn1.bbcode" "%1"
