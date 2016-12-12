@@ -33,7 +33,7 @@ Since pandoc ships with a built-in Lua interpreter, using **2bbcode** wrtiers do
 
 There are currently two 2bbcode writers in this project, addressing different BBCode flavors:
 
--   `2bbcode.lua` – the original 2bbcode writer by [@lilydjwg](https://github.com/lilydjwg/2bbcode).
+-   `2bbcode.lua` – the original 2bbcode writer by [@lilydjwg](https://github.com/lilydjwg/2bbcode), targeting the BBCode used by [FluxBB](https://fluxbb.org/forums/help.php#bbcode).
 -   `bbcode_phpbb.lua` – a fork of `2bbcode.lua` by [@tajmone](https://github.com/tajmone/2bbcode), targeting the BBCode used by [**phpBB**](https://www.phpbb.com/community/faq.php?mode=bbcode).
 
 About Pandoc
@@ -79,7 +79,7 @@ Just **pandoc**:
 
 -   [Pandoc](https://github.com/jgm/pandoc/releases/latest)
 
-For more information, see [Pandoc Setup](#pandoc-setup)
+For more information, see [Pandoc Setup](#pandoc-setup).
 
 Linux Usage
 ===========
