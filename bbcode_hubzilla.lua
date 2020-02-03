@@ -329,7 +329,7 @@ function PrintWarning(s)
   io.stderr:write("WARNING! " .. s .. '\n')
 end
 
-function trim1(s)
+function trim(s)
   return (s:gsub("^%s*(.-)%s*$", "%1"))
 end
 
@@ -337,6 +337,10 @@ end
 ==============================================================================
                                  FILE HISTORY                                 
 ==============================================================================
-v1.0 - 2016/12/10
+v1.1 - 2020/02/03
+     - correct changelof date
+     - correct name of trim fucntion
+
+v1.0 - 2020/02/03
      - Forked from `2bbcode_phpbb.lua` and created 1st release.
 ]]
