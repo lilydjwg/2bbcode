@@ -1,0 +1,1 @@
+pandoc -t "%~dp0bbcode_hubzilla.lua" -o "%~pn1.bbcode" "%1"

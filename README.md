@@ -5,25 +5,13 @@ A set of custom Pandoc writers for converting to BBCode.
 
 ------------------------------------------------------------------------
 
-<!-- #toc -->
--   [Introduction](#introduction)
-    -   [About Pandoc](#about-pandoc)
-    -   [About BBCode](#about-bbcode)
--   [System Requirements](#system-requirements)
--   [Linux Usage](#linux-usage)
-    -   [2bbcode](#2bbcode)
-    -   [2bbcode\_phpbb](#2bbcode_phpbb)
--   [Windows Usage](#windows-usage)
-    -   [2bbcode](#2bbcode-1)
-    -   [2bbcode\_phpbb](#2bbcode_phpbb-1)
--   [Pandoc Setup](#pandoc-setup)
-    -   [Windows](#windows)
-        -   [Pandoc MSI Installer](#pandoc-msi-installer)
-        -   [Pandoc via Chocolatey](#pandoc-via-chocolatey)
-        -   [Pandoc Standalone](#pandoc-standalone)
-    -   [Pandoc Supported Input Formats](#pandoc-supported-input-formats)
+<!-- TOC -->
 
-<!-- /toc -->
+- [Pandoc MSI Installer](#pandoc-msi-installer)
+- [Pandoc via Chocolatey](#pandoc-via-chocolatey)
+- [Pandoc Standalone](#pandoc-standalone)
+
+<!-- /TOC -->
 Introduction
 ============
 
@@ -35,6 +23,9 @@ There are currently two 2bbcode writers in this project, addressing different BB
 
 -   `2bbcode.lua` – the original 2bbcode writer by [@lilydjwg](https://github.com/lilydjwg/2bbcode), targeting the BBCode used by [FluxBB](https://fluxbb.org/forums/help.php#bbcode).
 -   `bbcode_phpbb.lua` – a fork of `2bbcode.lua` by [@tajmone](https://github.com/tajmone/2bbcode), targeting the BBCode used by [**phpBB**](https://www.phpbb.com/community/faq.php?mode=bbcode).
+-   `bbcode_hubzilla.lua` – a fork of `2bbcode_phpbb.lua` by
+    [@slobinger](https://github.com/slobinger/2bbcode), targeting the BBCode
+    used by [**Hubzilla**](https://hub.netzgemeinde.eu/help/en/member/bbcode).
 
 About Pandoc
 ------------
@@ -177,13 +168,13 @@ You have different choices for setting up pandoc:
 
 The advised choice is **\#2** – install via Chocolatey!
 
-### Pandoc MSI Installer
+### ..1. Pandoc MSI Installer
 
 Pandoc for Windows ships with an msi installer.
 
 When asked, choose “install pandoc for current user” (best choice).
 
-### Pandoc via Chocolatey
+### ..2. Pandoc via Chocolatey
 
 Since Pandoc doesn’t (can’t) check for updates, the best method of installation is via [Chocolatey](https://chocolatey.org/) (or [ChocolateyGUI](https://chocolatey.org/packages/ChocolateyGUI)):
 
@@ -191,7 +182,7 @@ Since Pandoc doesn’t (can’t) check for updates, the best method of installat
 
 Chocolatey handles silent installation and updates in the background (using default options), and helps you keeping pandoc always updated to the latest release.
 
-### Pandoc Standalone
+### ..3. Pandoc Standalone
 
 If you prefer to use pandoc in standalone mode, you’ll need to extract pandoc binary executable from the installer file – for some reasons, the standalone version is no longer available for download. The installer contains two binary files (`pandoc.exe` and `pandoc-citeproc.exe`), the html User’s Guide and the license files.
 
