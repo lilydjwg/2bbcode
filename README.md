@@ -38,7 +38,7 @@ There are currently three 2bbcode writers in this project, addressing different 
 -   `bbcode_hubzilla.lua` – a fork of `2bbcode_phpbb.lua` by
     [@slobinger](https://github.com/slobinger/2bbcode), targeting the BBCode
     used by [**Hubzilla**](https://hub.netzgemeinde.eu/help/en/member/bbcode).
-- `bbcode_steam.lua` – writer for steam flavour bbcode by @0x00002a[https://github.com/0x00002a/2bbcode]
+- `bbcode_steam.lua` – writer for steam flavour bbcode by [@0x00002a](https://github.com/0x00002a/2bbcode)
 
 About Pandoc
 ------------
