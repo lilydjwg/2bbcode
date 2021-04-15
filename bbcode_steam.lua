@@ -70,7 +70,7 @@ function Image(s, src, tit)
 end
 
 function Code(s, attr)
-  return "[code]" .. s .. "[/code]"
+  return "[i][b]" .. s .. "[/b][/i]"
 end
 
 function InlineMath(s)
