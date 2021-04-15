@@ -70,7 +70,7 @@ function Image(s, src, tit)
 end
 
 function Code(s, attr)
-  return "[b]" .. s .. "[/b]"
+  return "[code]" .. s .. "[/code]"
 end
 
 function InlineMath(s)
@@ -127,7 +127,7 @@ function OrderedList(items)
   for _, item in ipairs(items) do
     table.insert(buffer, "[*]" .. item)
   end
-  return "[list=1]\n" .. table.concat(buffer, "\n") .. "\n[/list]"
+  return "[olist]\n" .. table.concat(buffer, "\n") .. "\n[/olist]"
 end
 
 -- Revisit association list STackValue instance.
@@ -168,7 +168,7 @@ function Table(caption, aligns, widths, headers, rows)
 end
 
 function RawBlock(format, str)
-  return '[code]\n' .. str .. '\n[/code]\n'
+  return '[noparse]\n' .. str .. '\n[/noparse]\n'
 end
 
 function Span(s, attr)
