@@ -95,7 +95,7 @@ Required **2bbcode** Linux files:
 -   `2bbcode`
 
 ``` bash
-./2bbcode -f FORMAT <input >output
+./2bbcode FORMAT <input >output
 ```
 
 `FORMAT` defaults to `markdown_github`. Use `pandoc --list-input-formats` to list [acceptable formats](#pandoc-supported-input-formats).
@@ -109,7 +109,7 @@ Required **2bbcode\_phpbb** Linux files:
 -   `2bbcode_phpbb`
 
 ``` bash
-./2bbcode_phpbb -f FORMAT <input >output
+./2bbcode_phpbb FORMAT <input >output
 ```
 
 Same as with **2bbcode**, except for scripts names.
