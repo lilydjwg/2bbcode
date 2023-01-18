@@ -67,7 +67,7 @@ BBCode (Bulletin Board Code) is a lightweight markup language used by many messa
 BBCode tags work in a similar way to HTML tags, but square brackets are employed instead of angle brackets, and no paragraph tag is needed:
 
 ``` bbcode
-Here comes a [b]bold word[/d].
+Here comes a [b]bold word[/b].
 ```
 
 BBCode has fewer tags than HTML, intended to cover simple formatting cases.
