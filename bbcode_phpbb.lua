@@ -112,7 +112,7 @@ end
 function Link(s, src, tit)
   if src:find('mailto:', 1, true) == 1 then
     return s
-  fi
+  end
   local ret = '[url'
   if s then
     ret = ret .. '=' .. src
